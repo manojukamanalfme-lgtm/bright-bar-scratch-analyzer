@@ -1,0 +1,12 @@
+# Raw camera captures -- large, regenerable, transfer separately if needed
+recordings/
+
+# Generated test/detection outputs -- regenerable by re-running the scripts
+poc/output/
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code local session/memory state -- machine-specific, not project source
+.claude/

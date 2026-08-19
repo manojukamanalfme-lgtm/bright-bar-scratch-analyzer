@@ -1,0 +1,31 @@
+{
+  "output_dir": "./output",
+  "camera": {
+    "width": 1280,
+    "height": 1024,
+    "pixel_format": "BGR",
+    "exposure_us": 4000,
+    "gain_db": 0,
+    "source": "pylon"
+  },
+  "lighting": {
+    "num_angles": 4,
+    "settle_ms": 150,
+    "channel_names": ["A0", "A90", "A180", "A270"]
+  },
+  "detection": {
+    "frangi_scale_min": 1,
+    "frangi_scale_max": 6,
+    "frangi_scale_step": 1,
+    "score_threshold": 0.2,
+    "min_region_area_px": 25,
+    "min_aspect_ratio": 6.0,
+    "min_valid_intensity": 12,
+    "tophat_kernel_length": 25,
+    "tophat_thickness": 1,
+    "bar_axis": "horizontal"
+  },
+  "logging": {
+    "level": "INFO"
+  }
+}
